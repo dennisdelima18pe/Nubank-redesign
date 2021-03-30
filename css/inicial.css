@@ -1,0 +1,405 @@
+/*formatações gerais*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background: #f5f6fa;
+  overflow-x: hidden;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+/*header*/
+header {
+  background: #fff;
+  animation: go-back 3s alternate;
+}
+@keyframes go-back {
+  from {
+    transform: translateX(15px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+#header h5 {
+  color: #8c94aa;
+  font-weight: 600;
+}
+#btn-sair {
+  background: none;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  color: #8a05be;
+}
+#btn-sair a {
+  text-decoration: none;
+}
+
+/*renda*/
+button#renda {
+  background: none;
+  border: 1px solid #8a05be;
+  color: #8a05be;
+  font-size: 1.1rem;
+  padding: 0.7rem 1.8rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+button#renda:hover {
+  background: #8a05be;
+  color: #fff;
+  transition: background 4s;
+}
+button#usuario {
+  background: #f5f6fa;
+  color: rgb(255, 80, 15);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+#background-roxo {
+  background: #8a05be;
+  height: 4rem;
+  transition: background 3s ease-in;
+}
+
+/*main-grid******/
+#main-grid {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
+}
+/*serviços bancos*/
+#servicos-banco {
+  display: grid;
+  margin-top: -2rem;
+  grid-template-columns: repeat(6, 1fr);
+  animation: go-back 3s alternate;
+}
+button.banco-servicos {
+  height: 7rem;
+  padding: 2.5rem;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  background: #fff;
+  font-weight: normal;
+  flex-direction: column;
+}
+
+@keyframes go-back {
+  from {
+    transform: translateX(15px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+button.banco-servicos {
+  color: #8f94a7;
+}
+button:hover.banco-servicos {
+  animation: go-back 3s alternate;
+}
+@keyframes go-back {
+  from {
+    transform: translateX(7px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+button.banco-servicos img {
+  padding-bottom: 1rem;
+}
+/*aside*/
+#saldo {
+  background: #f5f6fa;
+  padding: 1.1rem;
+  margin: 1rem 0;
+  border-radius: 0.4rem;
+  color: rgb(140, 145, 165);
+  max-width: 26rem;
+}
+#saldo h5 {
+  display: flex;
+  justify-content: space-between;
+  font-weight: normal;
+}
+/*aside*/
+aside {
+  padding: 1.2rem;
+  max-width: 16rem;
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  margin-top: -2rem;
+  font-size: 0.7rem;
+  background: #fff;
+  border-radius: 0.4rem;
+  animation: go-back 3s alternate;
+}
+@keyframes go-back {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+aside ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+}
+aside ul li {
+  margin-top: 3rem;
+  color: rgb(140, 145, 165);
+  width: 100%;
+  border-radius: 0px;
+}
+aside h2 {
+  color: #8a05be;
+}
+aside ul li h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+  color: #8f94a7;
+  font-size: 1rem;
+}
+aside ul li h5 span {
+  margin-left: 0.4rem;
+  text-align: center;
+}
+aside ul li h5 img {
+  max-width: 1.2rem;
+}
+aside ul li button {
+  background: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+/*mais informações*/
+#mais-informacoes {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 50rem;
+  animation: go-back 3s alternate;
+}
+@keyframes go-back {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.informacoes {
+  padding: 1.2rem;
+  border-radius: 0.4rem;
+  background: #fff;
+  max-width: 20rem;
+}
+#informacoes-segundo {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  color: #9aa5c1;
+  font-size: 1rem;
+}
+#informacoes-segundo p {
+  max-width: 8rem;
+  margin-left: 1rem;
+}
+#informacoes-segundo img {
+  border-radius: 0.4rem;
+}
+.informacoes h5 {
+  font-weight: normal;
+  color: #828a91;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.informacoes h5 span {
+  display: flex;
+  align-items: center;
+}
+.informacoes h5 span img {
+  padding-right: 0.4rem;
+}
+/*produtos*/
+#produtos {
+  background: #fff;
+  padding: 2rem;
+  margin: 2rem auto 0 auto;
+  border-radius: 0.4rem;
+  animation: go-back 3s alternate;
+}
+@keyframes go-back {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+#produtos-item {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 1.5rem;
+}
+.produto {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #8f94a7;
+}
+/*cartões */
+#cartoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 45rem;
+  margin-left: 3.7rem;
+  animation: go-back 3s alternate;
+}
+@keyframes go-back {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+#cartoes div img {
+  border-radius: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+h2#solicitar-cartao {
+  max-width: 15rem;
+  color: #8a05be;
+  margin: 1.5rem 0;
+  font-size: 1.6rem;
+}
+/*footer*/
+
+footer {
+  padding: 2rem;
+  background: #edeef3;
+  animation: go-back 3s alternate;
+  color: #8f94a7;
+}
+@keyframes go-back {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer h5 {
+  color: #8a05be;
+}
+#footer h5 p {
+  color: #95aeda;
+  font-weight: normal;
+}
+#footer div > p {
+  color: #95aeda;
+  font-weight: normal;
+}
+/*footer*/
+
+@media (max-width: 739px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  #main-grid {
+    margin: 1rem 4rem;
+    justify-content: center;
+  }
+  #header {
+    align-items: center;
+  }
+  button#renda {
+    display: none;
+    font-size: 0.7rem;
+    padding: 0.5rem 0.1rem;
+  }
+  aside {
+    display: none;
+  }
+  #servicos-banco {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .banco-servicos {
+    max-width: 8.6rem;
+    margin-top: 1rem;
+  }
+  #mais-informacoes {
+    grid-template-columns: 1fr;
+  }
+  .informacoes {
+    margin-top: 1rem;
+    max-width: 15.7rem;
+    font-size: 1rem;
+  }
+  #cartoes {
+    grid-template-columns: 1fr;
+    max-width: 25rem;
+    margin: 0 auto;
+  }
+  #informacoes-segundo p {
+    padding-left: 1rem;
+    font-size: 0.7rem;
+    text-align: left;
+  }
+  #produtos-item {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 1rem;
+    justify-content: center;
+  }
+  #cartoes div img {
+    max-width: 12rem;
+  }
+}
